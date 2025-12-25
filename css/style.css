@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Cantarell-Regular', sans-serif;
+    line-height: 1.6;
+    color: #B0B0B0;
+    background: linear-gradient(#212121, #3B3B3B);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 10rem 1rem;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #A1BAB5;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.9);
+    font-weight: 400;
+}
+
+.card {
+    background: #303030;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    outline: 2px solid #424242;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #A1BAB5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+a {
+    color: #A1BAB5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+a.button {
+    display: inline-block;     /* anchors aren't buttons, fake it */
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: #242424;
+    outline: 2px solid #3B3B3B;
+    color: #A1BAB5;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+    border: none;
+    box-shadow: none;
+}
+
+a.button:hover {
+    background: #292929;
+}
+
+/* nice, intentional keyboard focus */
+a.button:focus-visible {
+    outline: 2px solid #76c7f3;
+    outline-offset: 2px;
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background: #242424;
+    outline: 2px solid #3B3B3B;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-links a {
+    color: #A1BAB5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #5a7d76;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

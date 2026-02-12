@@ -1,0 +1,105 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+.logo {
+    width: 90%;  /* 20% smaller = 80% of original */
+    max-width: 400px;  /* Optional: set a max size */
+    height: auto;  /* Maintains aspect ratio */
+    display: block;
+    margin: 10px auto;  /* Top margin + centered */
+}
+
+.container {
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto; /* Ensures horizontal centering */
+    align-items: center;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.footer {
+    background-color: #e6e6e6;
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 5px 0; /* Vertical padding */
+    position: relative; /* Positioning */
+    border-radius: 7.5px;
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    transition: background-color 0.3s ease;
+}
+
+.links {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.link-1 {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #47454a;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+.link-2 {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff;
+    gap: 10px;
+    background-color: #47454a;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+.link-1 img {
+    border-radius: 5px;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.link-1:hover {
+    background-color: #199de3;
+}
+
+.link-2:hover {
+    background-color: #199de3;
+}

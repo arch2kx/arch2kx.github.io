@@ -1,4 +1,4 @@
-### This is where my personal website is
+### My personal website
 
 Link:
 https://arch2kx.github.io/

@@ -3,7 +3,7 @@ body {
     background-color: #f2f2f2;
     color: #333;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     margin: 0;
 }
 
@@ -28,24 +28,79 @@ body {
     text-align: center;
 }
 
-.footer {
-    background-color: #e6e6e6;
-    color: white; /* White text */
-    text-align: center; /* Center the text */
-    padding: 5px 0; /* Vertical padding */
-    position: relative; /* Positioning */
-    border-radius: 7.5px;
-    bottom: 0; /* Stick to the bottom */
-    width: 100%; /* Full width */
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.socials .link-1,
+.socials .link-2 {
+    flex: unset;
+    padding: 12px 22px;
+    margin: 0;
+    font-size: 14px;
+    overflow: hidden;
     transition: background-color 0.3s ease;
+}
+
+.socials .link-1 img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
 }
 
 .links {
     font-family: "Noto Sans", sans-serif;
     display: flex;
     justify-content: center;
-    margin: 20px; /* Space between buttons */
+    margin: 10px; /* Space between buttons */
     margin-top: 20px;
+}
+
+.social-link {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff;
+    height: 25px;
+    gap: 10px;
+    background-color: #47454a;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.social-link-1 {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff;
+    height: 25px;
+    gap: 5px;
+    background-color: #47454a;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin-right: 5px;
 }
 
 .link-1 {
@@ -65,7 +120,7 @@ body {
     cursor: pointer;
     flex: 1;
     text-align: center;
-    margin: 5px;
+    margin: 8px;
 }
 
 .link-2 {
@@ -86,7 +141,7 @@ body {
     cursor: pointer;
     flex: 1;
     text-align: center;
-    margin: 5px;
+    margin: 8px;
 }
 
 .link-1 img {
@@ -96,10 +151,9 @@ body {
     margin-right: 10px; /* Space between image and text */
 }
 
-.link-1:hover {
-    background-color: #199de3;
-}
-
-.link-2:hover {
+.link-1:hover,
+.link-2:hover,
+.socials .social-link:hover,
+.socials .social-link-1:hover {
     background-color: #199de3;
 }

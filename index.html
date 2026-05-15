@@ -9,46 +9,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css?v=5">
+    <link rel="stylesheet" href="css/styles.css?v=7">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
+    <div class="socials">
+        <a id="socialGitHub" class="link-2" title="GitHub">
+            <i class="fa-fw fa-brands fa-github"></i>
+            <span class="body">GitHub</span>
+        </a>
+        <a id="socialDiscord" class="link-2" title="Discord">
+            <i class="fa-fw fa-brands fa-discord"></i>
+            <span class="body">Discord</span>
+        </a>
+        <a id="socialRoblox" class="link-1" title="Roblox">
+            <img src="images/roblox_icon.png" alt="Roblox">
+            <span class="body">Roblox</span>
+        </a>
+    </div>
+
     <div class="container">
         <img class="logo" id="logo" src="images/arch2k2x_ba-style@nulla.top.png" alt="logo" width="auto" height="20">
-        <p class="body">I do stuff</p>
-        <div class=links>
-            <a href="https://arch2kx.github.io/aronasay/" target="_blank" rel="noopener noreferrer" class="link-1">
+        <p class="body">I code stuff sometimes.</p>
+        <div class="links">
+            <a id="linkAronasay" class="link-1">
                 <img src="images/arona.png" alt="aronasay">
                 Aronasay
-            <a href="https://arch2kx.github.io/archs-ba-student-quiz/" target="_blank" rel="noopener noreferrer" class="link-1">
+            </a>
+            <a id="linkBAQuiz" class="link-1">
                 <img src="images/ba-student-quiz-icon.png" alt="Blue Archive Student Quiz">
                 Blue Archive Student Quiz
             </a>
         </div>
-        <footer class="footer">
-        <div class=links>
-            <a href="https://github.com/arch2kx" target="_blank" rel="noopener noreferrer" class="link-2" title="GitHub">
-                <i class="fa-fw fa-brands fa-github"></i>
-                <span class="body">GitHub</span>
-            </a>
-
-            <a href="https://discordapp.com/users/817571382069559296" target="_blank" rel="noopener noreferrer" class="link-2" title="Discord">
-                <i class="fa-fw fa-brands fa-discord"></i>
-                <span class="body">Discord</span>
-            </a>
-
-            <a href="https://www.roblox.com/users/828765814" target="_blank" rel="noopener noreferrer" class="link-1" title="Roblox">
-                <img src="images/roblox_icon.png"</img>
-                <span class="body">Roblox</span>
-            </a>
-
-        <!--
-            <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=emacs,robloxstudio,blender,figma,py,js,arch,vim&perline=8&theme=dark" />
-            </a>
-            -->
-        </footer>
-
     </div>
+
+    <script>
+        document.getElementById('socialGitHub').addEventListener('click', () => {
+            window.open('https://github.com/arch2kx', '_blank');
+        });
+        document.getElementById('socialDiscord').addEventListener('click', () => {
+            window.open('https://discordapp.com/users/817571382069559296', '_blank');
+        });
+        document.getElementById('socialRoblox').addEventListener('click', () => {
+            window.open('https://www.roblox.com/users/828765814', '_blank');
+        });
+        document.getElementById('linkAronasay').addEventListener('click', () => {
+            window.open('https://arch2kx.github.io/aronasay/', '_blank');
+        });
+        document.getElementById('linkBAQuiz').addEventListener('click', () => {
+            window.open('https://arch2kx.github.io/archs-ba-student-quiz/', '_blank');
+        });
+    </script>
 </body>
 </html>
